@@ -1,0 +1,17 @@
+import random
+lucky_num = random.randint(1, 50)
+
+while True:
+ user_num = int(input("Guess the lucky number: "))
+ if lucky_num == user_num:
+    print("Correct Guess, YOU WON!!")
+    break
+
+ elif lucky_num < user_num:
+    print("Too High")
+
+ else:
+   print("Too Low")
+
+
+print("---------- Game has ended -----------------------")
